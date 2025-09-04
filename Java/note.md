@@ -10,7 +10,7 @@
 
 - `items` have a `SellIn` = number of days we have to sell the `items`
 - `items` have a `Quality` = quality of the item
-- Item enum **"Aged Brie"**
+- Item enum **"Aged Brie"**, Quality increase for **Aged Brie**
 - Item enum **"Sulfuras"**, never has to be sold and Quality will not decrease. This item has a `Quality` of 80 and never alters.
 - Item enum **"Backstage passes"**,
   - Quality += 2 (if 5 < `SellIn` - currentDate <= 10)

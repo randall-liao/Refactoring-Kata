@@ -1,4 +1,4 @@
-package com.gildedrose.handlers;
+package com.gildedrose.item.handlers;
 
 import com.gildedrose.Item;
 
