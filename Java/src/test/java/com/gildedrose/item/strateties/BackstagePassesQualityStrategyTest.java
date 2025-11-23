@@ -98,4 +98,28 @@ class BackstagePassesQualityStrategyTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    void test_quality_increase_one_boundary() {
+        // arrange
+        int expectedResult = 10;
+        int currentQuality = 9;
+        int sellIn = 11;
+        // act
+        int actualResult = backstagePass.update(currentQuality, sellIn);
+        // assert
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void test_quality_increase_one() {
+        // arrange
+        int expectedResult = 10;
+        int currentQuality = 9;
+        int sellIn = 24;
+        // act
+        int actualResult = backstagePass.update(currentQuality, sellIn);
+        // assert
+        assertEquals(expectedResult, actualResult);
+    }
+
 }
